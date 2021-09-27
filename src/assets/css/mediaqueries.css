@@ -1,0 +1,788 @@
+
+	/* media Q */
+
+	/** == px == **/
+	
+@media screen and (max-width: 1180px) {
+	/* articles */
+	
+	.col_2-3{
+	width:98%;
+	padding:0 9px;
+	}	
+	
+	.col_1-3{
+	width: 50%;
+	display: block;
+	margin: 9px auto 0 auto;
+	padding: 0px 0 36px 0;
+	}
+	/** tableaux */
+	.box-post-contenu table {
+	width: 99%;
+	margin: 0 auto;
+	}
+	
+	
+	/*== Rapport annuel 2017 ? */
+	.multicolumn{
+	column-count:2;
+	}
+}
+
+@media screen and (max-width: 1124px) {
+
+	#box-header, #box-logo,#box-logo img, #acronyme, #deroule-acronyme{
+		transition:none !important;
+	}
+	
+	/* header */
+    .home #box-header, #box-header{position:relative;}
+	.home #box-logo ,.page #box-logo {padding: 9px 0px;width:33%;}
+	
+	.home #header-shim, #header-shim{display:none;}
+	
+	.home #deroule-acronyme, #deroule-acronyme{font-size: 0.95rem;}
+	.home #deroule-acronyme, .page #deroule-acronyme{display:none;}
+	
+	.home #acronyme,#acronyme{font-size: 1.6rem}
+	.home #box-logo img, #box-logo img{
+	    width: 45px;
+	 }
+	 
+	 
+	 
+	.contenu{padding:0 5px;}
+	
+	#box-surnav li{
+	    padding:3px;
+	}
+	
+	#box-nav a:link, #box-nav a:hover, #box-nav a:visited {
+		font-size: 1rem;
+		padding: 18px 9px;
+		line-height: 1.7;
+	}
+	
+	/* home */
+	.box-news{
+	    box-sizing:border-box;
+	    
+	}
+	.box-choix-public{
+		width:82px;
+		margin-right:10px;
+	}
+	.box-choix-public h3{
+		font-size:1.05rem;
+	}
+	
+	.box-choix-public p{display:none;} 
+	#box-choix-agence{
+	width:35%;
+	}
+	#box-choix-agence h2{
+	width:inherit;
+	}
+	#box-choix-public-tous{
+	    width:100%;
+	}
+
+	#box-surnav a:link, #box-surnav a:hover, #box-surnav a:visited{
+	    font-size:0.78rem;
+	}
+	
+}
+
+	/** == 950px == **/
+@media screen and (max-width: 950px) {
+	#box-contenu .contenu{padding-right:10px; padding-left : 10px;}
+
+	.home #box-logo, #box-logo{padding:5px 0; width:99%;}
+
+
+	#box-surnav{float:left;width:100%;/*border-top:1px solid #b6b6b6;*/}
+	#box-surnav ul{margin:0 auto;display:table;}
+  
+	#box-surnav li{
+	display: table-cell;
+	text-align: center;
+	width: 10%;
+	vertical-align:middle;
+	border-right:none;
+	background:#eee;
+	}
+	  
+	#box-surnav li:nth-child(2), #box-surnav li:nth-child(4), #box-surnav li:nth-child(5) {
+    display: none;
+	}	
+	
+	#box-surnav .logo-rs{
+	    width:34px;
+	    height:34px;
+	}
+
+	/* header */
+	#box-header{
+	position:relative;
+	}
+	#header-shim{display:none;}
+
+
+
+	/*=== nav */
+	#agence #box-nav{height:10px;}
+	
+	#box-nav{
+	position: absolute;
+	width: 100%;
+	left: -100%;
+	top:0;
+	transition: all .4s ease 0s;
+	z-index: 10;
+	   
+	}
+
+	#box-nav:target{
+	left:0px;
+	}
+/*	
+	#box-menu-burger a.menu-burger-off{
+	font-size: 2.4rem;
+	color: #fff;
+	display:block;
+	}
+	
+	#box-menu-burger a.menu-burger-on{
+	display:none;
+	}
+	
+	
+
+		
+
+	#box-nav:target + #box-menu-burger a.menu-burger-off  {
+	display:none;
+	}
+	#box-nav:target + #box-menu-burger a.menu-burger-on{
+	display:block;
+	color: #fff;
+	font-size: 2.4rem;
+	}
+	/*= */
+
+	/* burger v.2 */
+	#box-menu-burger{
+	display: block;
+	}	
+	.menu-burger-off, .menu-burger-on { 
+	background-color:#fff;
+	display:block;
+	margin-top:2%; 
+	border: 2px solid #404040;
+	border-radius: 2px; 
+	height: 36px; 
+	width:36px;
+	position: fixed;
+	top: 10px;
+	right: 10px;	
+	z-index:10;
+	transition: background-color 0.2s linear 0s;
+	}
+
+	.menu-burger-off:hover{
+	background-color:#CBB6C9;
+	}
+
+	.menu-burger-off:before, .menu-burger-off:after, .menu-burger-on:before, .menu-burger-on:after { 
+	background: #404040;    
+	content:"";
+	height: 5px; 
+	position: absolute; 
+	left:3px;  
+	top: 4px; 
+	width:30px; 
+	box-shadow: 0 11px 0 #404040;
+	border-radius: 2px;
+	}
+
+		.menu-burger-off:after { 
+		top: 25px; 
+		box-shadow: 0 11px 0 transparent;
+		}
+
+	.menu-burger-on{
+	display:none;
+	}
+	
+	#box-nav:target + #box-menu-burger .menu-burger-on{
+	display:block;
+	background:#550E4E;
+	border: 2px solid #fff;
+	}
+	
+	#box-nav:target + #box-menu-burger  .menu-burger-on:before{ 
+	transform: translate(0, 11px) rotate(45deg); 
+	background: #CBB6C9;
+	box-shadow: 0px 11px 0px 0px transparent;
+	}
+	
+	#box-nav:target + #box-menu-burger .menu-burger-on:after{ 
+	transform: translate(0, 11px) rotate(-45deg);
+	background: #CBB6C9;
+	box-shadow: 0px 11px 0px 0px transparent;
+	}	
+	
+	#box-nav:target + #box-menu-burger .menu-burger-off  {
+	display:none;
+	}
+	
+	
+	
+
+	#box-nav .contenu{
+	background-color:inherit;
+	padding:0;
+	}
+	#box-nav ul{
+	display:block;
+	background-color:inherit;
+	width:100%;
+	}
+	
+
+	#box-nav .nav > li{
+	 width:100%;
+	}
+	
+	
+	#box-nav a:link, #box-nav a:hover, #box-nav a:visited {
+		font-size: 1rem;
+		padding: 18px 9px;
+		line-height: 1.7;
+	}
+
+	#box-nav .nav > li.current-menu-item{
+	border-bottom:1px dotted #fff;
+	background-color:initial;
+	}
+	
+	/*
+	#menu-menu-administration  li:first-child a:after{
+	content:'        Administration';
+	}
+	*/
+	/* == */
+	
+	/*= sous nav */
+	#box-nav .sub-menu{
+	display:block;
+	position:relative;
+	}
+	#box-nav .sub-menu li {
+		display:inherit;
+	}
+	#box-nav .sub-menu li a{
+		line-height:1;
+		text-align:left;
+		
+	}
+	/** contenu */
+	#box-contenu .contenu{
+	padding:5px 20px 0 20px;
+	box-sizing:border-box;
+	width:100%;
+	}
+	
+	
+
+	/* recrut' */
+	#box-recrutement{display:none;}
+	/* == */
+	
+	/* box-news */
+	.box-news{
+	display:block; 
+	/*max-width:98%;*/
+	margin:0 auto ;
+	max-width: 50%;
+
+	}
+	
+	#box-actualites  .boxType-1, #box-publications   .boxType-1{
+	min-height: initial;
+	float:initial;
+	max-width:98%;
+	border-bottom:none;
+	margin:16px;
+	}
+	
+	#box-actualites .boxType-2{
+	max-width:75%;
+	}
+		#box-actualites .boxType-2 img{
+		max-width: 76%;
+		margin: 0 auto;
+		display: block;
+		}	
+	
+  	#box-actualites .boxType-3{
+		max-width:98%;
+		color:inherit;
+	}
+
+	#box-actualites .boxType-4{
+	max-width:50%;
+	}	
+  	
+
+	#box-outils{
+	display:none;
+	}
+  
+	/* articles */
+	
+	.col_2-3{
+	width:98%;
+	}
+	.col_2-3 .box-intro{
+	font-size:1.25rem;
+	}
+	
+	.col_1-3{
+	width: 50%;
+	display: block;
+	margin: 9px auto 0 auto;
+	padding: 0px 0 36px 0;
+	}
+		/** tableaux */
+
+
+
+    table.cc {
+      border: 0;
+      width:90%;
+    }
+
+    table.cc thead {
+      display: none;
+    }
+
+    table.cc tr {
+      margin-bottom: 10px;
+      display: block;
+      border-bottom: 2px solid #ddd;
+    }
+
+    .cc td {
+      display: block;
+      text-align: center;
+      font-size: 13px;
+      border-bottom: 1px solid #ccc;
+	  position:relative;
+	  height:auto;
+	  padding:40px 0 20px 0;
+    }
+		.cc td:first-child{
+		text-align: center;
+		padding:40px 0 20px 0;
+		}
+
+    .cc td:last-child {
+      border-bottom: 0;
+    }
+
+    .cc td:before {
+      content: attr(data-label);
+	  position:absolute;
+	  top:5px;
+	  left:10px;
+	  border-bottom: 1px dotted #404040;
+    }
+ 
+
+	/* footer */
+	#box-plan-site{
+		text-align:center;
+	}
+	#box-plan-site ul{
+		padding:0;
+		display:flex;
+		justify-content: space-around;
+	}
+	#box-plan-site > ul > li {
+    text-align: left;
+    margin: 0 0 40px 0px;
+    max-width: 38%;
+    display: flex;
+    flex-direction: column;
+	}
+	
+	#box-plan-site > ul > li  > ul{
+		margin:0;
+		margin: 0;
+    display: flex;
+    flex-direction: column;
+	}
+	
+	
+	
+	
+	/*== page recurtement v2 (20160419) */
+	#chiffres-cles h2{
+	font-size:2.5rem;    
+	}
+	
+	#chiffres-cles h3{
+	font-size:1.5rem;    
+	}	
+	
+	#box-salon-video{
+	    flex-direction:column;
+	    align-items:center;
+	}
+	#box-video{
+	    margin-top:21px;
+	}
+	iframe{
+	    width:100%;
+	}
+	
+	/** page visa de secu. home **/
+    .visa-secu .homepage .public-types a:link,.visa-secu .homepage .public-types a:visited,.visa-secu .homepage .public-types a:hover{
+        font-size:1rem;
+        flex-direction:column;
+    }
+    
+    .visa-secu .homepage .public-types a h4{
+        font-size:1.2rem;
+    }
+	
+   .visa-secu .homepage .qualif-certif a h5, .visa-secu .homepage .qualif-certif a h5 span{
+    font-size:1.3rem;
+    }	
+        
+        
+
+
+}	
+
+/* mQ 600 */
+@media screen and (max-width: 600px) {
+    #box-plan-site ul{
+		padding:0;
+		display:flex;
+		justify-content: space-around;
+	}
+    #box-plan-site > ul > li {
+    width: 40%;
+    }
+    
+    /*= eidas/homepage ::frise */
+    eidas.frise ul{
+        flex-direction:column;
+    }
+    eidas.frise li{
+        width:100%;
+        margin-bottom:18px;
+    }
+    
+    /*== #security-rules */
+    #security-rules {
+        flex-direction: column;
+    }
+    #security-rules .regle-secu{
+        width: 100%;
+    
+    }
+    
+     /*= eidas/homepage ::frise */
+    .box-post-contenu .psc-centreeval tbody td:nth-child(1){
+         display:block;
+         width:100%;
+     }
+    .box-post-contenu .psc-centreeval tbody td:nth-child(2){
+         display:block;width:100%;
+         border-left:none;
+         border-top:1px dotted #bbb;
+     }
+     
+         .banniere-principale.visa-secu img{
+        width:72%;
+    }
+    
+    
+    /*= COT liste /agence/cybersecurite/action-territoriale/ $$ 20180515 */
+    #cot-zones-liste thead{display:none;}
+    
+
+    #cot-zones-liste tr > td:first-child {
+        position: relative;
+        text-align: center;
+        justify-content: center;
+        font: 1rem caslonBold;
+        text-transform: uppercase;
+        background:#eee;
+        color:#404040;
+    }
+
+    #cot-zones-liste tr > td::before {
+       content: attr(data-col-libelle) " : ";
+    }
+        #cot-zones-liste tr > td:first-child::before {
+           content:"";
+        }
+    
+    #cot-zones-liste tr > td:last-child {
+        margin-bottom: 2rem;
+    }
+    #cot-zones-liste td {
+        display: flex;
+        width: 96%;
+        padding:0.8rem 0.5rem 0.5rem 0.5rem;
+        border:none;
+    }
+
+    #cot-zones-liste tbody tr:nth-child(2n) {
+        background: none !important;
+    }
+   
+    
+    .box-info-rgpd{
+        
+    }
+
+     .elements-liste{
+        display:flex;
+        flex-direction:column;
+    }
+    .elements-liste li{
+        display: flex;
+        flex-direction: column;
+    }
+
+/*@media screen and (max-width:600px)*/
+.elements-liste .image {
+    width: 107px;
+    display: inline-block;
+    height: 107px;
+    align-self: center;
+    box-shadow: 0px 0px 5px 2px #bbb;
+    padding: 0.2rem;
+    margin: 0.5rem;
+}
+
+
+    .elements-liste .texte {
+        width: 100%;
+        padding: 0 2%;
+        box-sizing: border-box;
+    }
+
+
+        .elements-liste h3 {
+        text-align:center;
+        } 
+        .elements-liste .theme {
+        text-align:center;
+        }   
+        .elements-liste .auteursavoir accès au résumé du livre {
+         display:none;
+        }
+                
+        .elements-liste .date {
+         font-size:0.8rem;
+         padding:0;text-align:center;
+        }
+     
+        .elements-liste .tags {
+         display:none;
+        }
+        
+
+    .elements-liste .telechargement {
+        height: auto;
+        width: 100%;
+        padding: 0;
+    }
+
+    .elements-liste .telechargement a:link, .elements-liste .telechargement a:visited, .elements-liste .telechargement a:hover {
+        display: block;
+        background: url('../images/icon_dl.png') no-repeat 65% 53%;
+        height: auto;
+        padding: 1.5rem 0 0.9rem 0;
+        margin: 0 0 .5rem 0;
+        background-color: #dcdcdc;
+    }
+         .elements-liste .telechargement a:hover {
+             background-color: #bbb;
+             color:#fff;
+         }
+          .elements-liste .telechargement a:hover span{
+              color:currentColor;
+          } 
+     
+     
+}
+
+/* mQ 480 */
+@media screen and (max-width: 480px) {
+    
+
+  	#box-plan-site ul{
+	padding:0;
+    display:flex;
+	justify-content: space-between;
+    flex-wrap: wrap;
+	} 
+	
+    #box-plan-site > ul > li {
+    width: 40%;
+    }
+    
+    /* à optimiser temp */
+    #box-menu-burger{
+      /* display:none;*/
+    }
+    
+	#box-choix .contenu {
+    display: block;
+    max-width: 1100px;
+	background:#fff;
+	}
+
+	#box-choix h2{
+	font-size:1.13rem;
+	padding: 2px 0;
+	
+	}
+	
+	#box-choix hr{display:none;}
+	/* */
+	
+	#box-choix-agence, #box-choix-public-tous{
+	float:none;
+	display:block;
+	width:100%;
+	}	
+	/* */
+	
+	#box-choix-agence{margin:0; }
+	#box-choix-agence h2{
+	background: url("../images/icon_anssi_mini.png") no-repeat scroll 25% 45%;
+	border-bottom:1px solid #b6b6b6;
+	margin:8px 0 0 0;
+	padding:15px 0;
+	width: 100%;
+	}
+	.box-choix-agence {display:none;}
+	/* */
+	
+	#box-choix-public-tous{
+	margin:0;
+	}
+	
+	#box-choix-public-tous h2{
+	font-family:"ag_condensed_italic";
+	font-size:0.88rem;
+	color:#808080;
+	}
+	
+	.box-choix-public{
+	width:100%;
+	}
+	.box-choix-public img{
+	display:none;
+	}
+
+	.box-choix-public h3{
+	border-bottom: 1px solid #b6b6b6;
+	font-size: 1rem;
+	margin:0px 0 0 0;
+	padding:13px 0;
+	}
+	
+	 .chx-administration h3 {
+	border-top: 1px solid #b6b6b6;
+	background: url("../images/icon_administration_mini.png") no-repeat scroll 25% 30%;
+
+	}
+	 .chx-entreprise h3{
+	background: url("../images/icon_entreprise_mini.png") no-repeat scroll 25% 30%;
+	}
+	
+	 .chx-particulier h3{
+	background: url("../images/icon_particulier_mini.png") no-repeat scroll 25% 30%;
+	}
+	
+	
+	.boxType-4, .boxType-2{
+	max-width:90%;
+	}		
+	
+	#box-outils{
+	display:none;
+	}
+
+		/** tableaux */
+		.cc th:nth-child(2), th:nth-child(4), th:nth-child(5){
+		display:none;
+		}
+		.cc td:nth-child(2), td:nth-child(4), td:nth-child(5){
+		display:none;
+		}		
+		
+	
+	/****
+	 Administration $$ test
+	**/ 
+	.administration #box-nav, .agence #box-nav{height:auto;}/**/
+	#box-nav{
+	padding:0;
+	width:100%;	
+	position: absolute;	
+	}
+	
+	#box-nav ul{
+	padding: 0;margin: 0 0 0 -5px;
+	}
+	
+	#box-nav ul li{display:block;}
+	#box-nav a:link, #box-nav a:hover, #box-nav a:visited{
+	font-family:"ag_light_condensed", Helvetica, Verdana;
+	text-align:center;
+	text-transform:uppercase;
+	color:#fff;
+	font-size: 0.9rem;
+	text-decoration:none;
+	padding:1em 0.9em;
+	display:block;
+	}
+
+		#box-nav li:last-child{
+		border-right:none;
+		padding-right: 0;
+		}
+
+	/*== page recrutement v2 (20160419) */
+	
+	#chiffres-cles {
+	display:none;
+	}
+
+	.col_2-3{
+	width:98%;
+	}
+	
+	.col_1-3{
+	width: 100%;
+	display: block;
+	margin: 9px auto 0 auto;
+	padding: 0px 0 36px 0;
+	}		
+	
+	
+
+
+	
+}

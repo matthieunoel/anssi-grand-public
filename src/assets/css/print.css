@@ -1,0 +1,60 @@
+/*** CSS print  
+	upd.20150114 $$ 20150414
+*/
+
+@page {
+  size: A4;
+  margin: 5mm;
+}
+
+	html { font-size: 12px; } 
+	body{background-color:#fff;}
+	
+	#box-header{
+	position:relative;
+	box-shadow:none;
+	}
+	
+	#box-logo{
+	padding: 6px 0;
+	}
+		#box-logo img{
+		width: 40px;
+		}	
+		
+	#acronyme{ font-size: 1.6em;}
+	#deroule-acronyme{ font-size: 1em;width:20mm;}
+				
+
+	.box-contenu a{
+	color:#000 !important;
+	}
+	
+	.box-contenu a:after {
+	content: " (" attr(href) ") " !important;
+	}
+
+    .col_2-3{
+        
+        width:100%;
+    }
+	
+    .article .titraille{
+        border:1px solid red;
+        margin:0;
+    }
+	
+	
+	
+	/** hide **/
+	#box-footer, #box-outils, #box-nav, #box-surnav, .col_1-3, #header-shim, #box-toppage{
+	display:none;
+	}
+	
+	/* tableau passi qualifié */
+	.hidden{
+	    display:block !important;
+	}
+	.ico-action-clic{
+	    display:none !important;
+	}

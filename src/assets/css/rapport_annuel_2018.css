@@ -1,0 +1,471 @@
+
+body { position:relative; }
+
+#box-contenu {
+    padding: 0px 0 0px 0;background-color:#fafafa;
+}
+
+.col_2-3 {
+	margin-top: 0;
+}
+
+.page-template-template-rapport-annuel-php #box-contenu .contenu {
+    max-width:none;
+    padding-left:0;
+	padding-right:0;
+}
+
+.wrap-cols {
+    max-width:1200px;
+    margin:0 auto;
+    padding:0 1vw;
+}
+
+.page-template-template-rapport-annuel-php #box-contenu .contenu {
+    max-width:none;
+    padding-left:0;padding-right:0;
+}
+
+.banniere-principale {
+	position: relative;
+	height:28vh;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+ }
+
+.banniere-principale img {
+	width:50%;
+	height:90%;
+}
+
+.banniere-principale .slogan {
+	font:4.5vw "ag_bold_condensed";
+	color: #102a4e;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: absolute;
+	top: 0; left:0;
+	z-index: 4;
+	height:100%;
+	width:100%;
+	text-transform:uppercase;
+}
+
+.agence .titraille h1 {
+	color: #0085bf;
+	font-family: "ag_bold_condensed";
+	font-size: 2.4rem;
+}
+
+/* == Box Intro == */
+
+.box-intro {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+}
+
+.box-intro img {
+	margin: 0 15px 15px 0;
+}
+
+.box-intro .intro {
+	display: flex;
+	flex-direction: column;
+	justify-content: end;
+	flex: 1 1 1px;
+	min-width: 54%;
+	margin: 0 10px 15px 0;
+}
+
+.box-intro .intro p {
+	flex: 1;
+}
+
+.box-intro .intro a {
+	display: flex;
+	align-self: flex-end;
+	margin:0;
+	padding: 1rem 1rem 0.8rem 1rem;
+	background-color:#dfe3e5;
+	text-align:center;
+	font-family: "caslonBoldItalic",Arial;
+	font-size:0.8rem;
+	color: #102a4e;
+}
+
+.box-intro .intro a:hover {
+	background-color:#0085bf;
+	color:#ffffff;
+}
+
+/* == Box Shortcuts == */
+	
+.box-shortcuts {
+    margin: 25px 0 60px 0;
+}
+
+.box-shortcuts ul {
+	justify-content: center;
+}
+
+.box-shortcuts li {
+	width:22%;
+	box-sizing: border-box;
+	margin: 0 1rem;
+}
+
+.box-shortcuts a {
+	position: relative;
+	display:inline;
+}
+
+.box-shortcuts h3 { 
+	font:1.5rem "ag_condensed";
+	color: #0085bf;
+	line-height:0.9;
+	text-transform: uppercase;
+	height: 27%;
+	margin: 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color:#fff;
+	text-align:center;
+	transition: all 0.2s linear;
+}
+
+.box-shortcuts p { 
+	height: 75%;
+	margin: 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color:#eee;
+	transition: all 0.2s linear;
+}
+
+.box-shortcuts .ico-svg{
+	width:50%;
+	transform:scale(1);
+	transition: all 0.2s linear;
+}
+
+.ico-svg {
+	transform:scale(0);
+} 
+
+/* == Icones SVG == */
+
+#horloge-ico-svg .st0{fill:#FFFFFF;stroke:#2C4161;stroke-width:4;}
+#horloge-ico-svg .st1{fill:none;stroke:#000000;stroke-width:5;}
+#horloge-ico-svg .st2{fill:none;stroke:#000000;}
+#horloge-ico-svg .st3{fill:none;stroke:#CADCEC;stroke-width:6;}
+#horloge-ico-svg .st4{display:none;fill:none;stroke:#00FF00;stroke-width:2;}
+
+#ra-ico-svg .cls-1 {fill: #fff;}
+#ra-ico-svg .cls-2 {fill: #bad8eb;}
+#ra-ico-svg .cls-3 {fill: none;stroke: #002b49;stroke-linejoin: bevel;stroke-width: 0.75px;}
+
+
+/* hover */
+.box-shortcuts li:hover h3 {
+	background-color:#cbdced;
+	color:#102a4e;
+}
+.box-shortcuts li:hover  p {
+	background-color:#0085bf;
+}   
+
+.box-shortcuts li:hover .ico-svg {
+ transform:scale(1.2);
+}
+
+/* ==========
+	2018
+============= */
+
+.tpl-ra .box-post-contenu {
+	margin-top: 0;
+}
+
+.tpl-ra .box-post-contenu p {
+	color: #102a4e;
+}
+
+.tpl-ra .box-post-contenu {
+	color: #102a4e !important;
+}
+
+/* == Surcharge Bootstrap == */
+*, ::after, ::before {
+	box-sizing: content-box;
+}
+
+/* == Box Chapter == */
+
+.box-chapter {
+	margin-bottom: 70px;
+}
+
+.box-chapter hr {
+	margin-bottom: 20px !important;
+}
+
+.box-chapter h2 {
+	margin-bottom: 5px;
+	font-family: "ag_bold_condensed";
+	font-size: 1.8rem;
+	text-transform: uppercase;
+}
+
+.box-chapter .chapo {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+}
+
+.box-chapter .chapo a {
+	cursor: pointer;
+}
+
+.box-chapter img {
+	vertical-align:text-bottom;
+}
+
+.box-chapter .intro {
+	display: flex;
+	flex-direction: column;
+	flex: 1 1 1px;
+	min-width: 70%;
+}
+
+.box-chapter .intro p {
+	flex-grow: 1;
+	margin: 0px;
+	padding: 30px 30px 10px 30px;
+	background-color: #fff;
+	font-family: "caslonItalic";
+	font-size: 1.4rem;
+	line-height: 1.2;
+}
+
+/*
+.box-chapter .intro p::before { 
+	content: "Â«";
+}
+.box-chapter .intro p::after {
+	content: "Â»";
+	margin-left: 5px;
+}
+*/
+
+.box-chapter .intro a {
+	padding: 15px;
+	color: #ffffff;
+	font-family: "ag_condensed";
+	font-size: 1.4rem;
+	text-transform: uppercase;
+	clear: both;
+}
+
+.box-chapter .intro a .number {
+	float: left;
+	margin-right: 30px;
+	padding: 5px 25px 5px 25px;
+	border-right: 1px solid #ffffff;
+	font-family: "ag_bold_condensed";
+	font-size: 3rem;
+}
+
+.box-chapter .intro a .title {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	height: 100%;
+	color: #ffffff;
+	font-family: "ag_condensed";
+	font-size: 1.4rem;
+	text-transform: uppercase;
+}
+
+.box-chapter ul {
+	clear: both;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	margin: 0 -10px;
+	padding:0;
+	list-style: none;
+}
+
+.box-chapter ul li {
+	margin: 10px;
+	width: 47.5%;
+	text-align: center;
+	font-family: "ag_condensed";
+	font-size: 1.2rem;
+}
+
+.box-chapter ul li a {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	display: block;
+	padding: 15px;
+}
+
+/* surcharge et annule le comportement par defaut en cas de lien externe */
+.box-post-contenu a[href^="http"]::after {
+	content: "";
+}
+
+.box-chapter ul li:hover {
+	color: #ffffff;
+}
+
+/* == Chapter 1 == */
+
+.chapter1 {
+	padding-top: 50px;
+	border-top: 1px solid #102a4e;
+}
+
+.chapter1 h2 { color: #958f3b; }
+
+.chapter1 hr { background-color: #958f3b; }
+
+.chapter1 .intro a { background-color: #d2cc35; }
+
+.chapter1 .intro a:hover { background-color: #958f3b; }
+
+.chapter1 ul li {
+	background-color: #eeeeee;
+	border-bottom: 5px solid #d2cc35;
+}
+
+.chapter1 ul li:hover { background-color: #d2cc35; }
+
+/* == Chapter 2 == */
+
+.chapter2 h2 { color: #478783; }
+
+.chapter2 hr { background-color: #478783; }
+
+.chapter2 .intro a { background-color: #5fb6b1; }
+
+.chapter2 .intro a:hover { background-color: #478783; }
+
+.chapter2 ul li {
+	background-color: #eeeeee;
+	border-bottom: 5px solid #5fb6b1;
+}
+
+.chapter2 ul li:hover { background-color: #5fb6b1; }
+
+/* == Chapter 3 == */
+
+.chapter3 h2 { color: #5c1a61; }
+
+.chapter3 hr { background-color: #5c1a61; }
+
+.chapter3 .intro a { background-color: #6d1e73; }
+
+.chapter3 .intro a:hover { background-color: #5c1a61; }
+
+.chapter3 ul li {
+	background-color: #eeeeee;
+	border-bottom: 5px solid #6d1e73;
+}
+
+.chapter3 ul li:hover { background-color: #6d1e73; }
+
+/* == Box Trend == */
+
+.box-trend {
+	padding-top: 50px;
+	border-top: 1px solid #102a4e;
+	margin-bottom: 50px;
+}
+
+.box-trend hr {
+	margin-bottom: 20px !important;
+}
+
+.box-trend h2 {
+	margin-bottom: 5px;
+	font-size: 1.8rem;
+	text-transform: uppercase;
+}
+
+.box-trend ul {
+	clear: both;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;	
+	margin: 0 -10px;
+	padding:0;
+	list-style: none;
+}
+
+.box-trend ul li {
+	margin: 10px;
+	width: 47.5%;
+	background-color: #cbdced;
+	font-family: "ag_condensed";
+	font-size: 1.2rem;
+}
+
+.box-trend ul li:hover {
+	color: #ffffff;
+	background-color: #0085bf;
+}
+
+.box-trend ul li a {
+	display: block;
+	padding: 25px 50px;
+	font-family: "caslonItalic";
+}
+
+.box-trend ul li .title {
+	text-transform: uppercase;
+	color: #0085bf;
+	font-family: "ag_bold_condensed";
+	font-size: 1.2rem;
+}
+
+.box-trend ul li:hover {
+	cursor: pointer;
+}
+
+.box-trend ul li:hover .title {
+	color: #ffffff;
+}
+
+/* == Modal Popup == */
+
+.modal-title {
+    color: #0085bf;
+    font-family: "ag_condensed";
+    font-size: 1.5rem;
+}
+
+.modal-body {
+    padding: 2rem;
+}
+
+.modal img {
+	width: 100%;
+	height: auto;
+}
+
+.modal .close {
+	margin-top: -1.5rem;
+}
+
+.modal .close span {
+	font-size: 2rem;
+	font-weight: bold;
+}

@@ -1,0 +1,327 @@
+/* */
+
+
+#box-contenu {
+padding: 0px 0 0px 0;
+}
+
+#recrutement-ban{
+max-width: 100%;
+position: relative;
+}
+
+#recrutement-ban img{
+  width:100%;
+}
+
+#box-slogan{
+font-size: 3rem;
+font-family: "ag_bold_condensed";
+color: #fff;
+letter-spacing: 2px;
+text-transform: uppercase;
+position: absolute;
+top: 38%;
+left: 23%;
+line-height: 1;
+text-shadow: 1px 1px 2px #000;
+}
+
+@media (max-width: 480px) {
+    #box-slogan{
+        font-size: 2.5rem;
+        left: 15%;
+    }
+}
+
+.box-post-contenu {
+margin-top: 18px;
+}
+
+#box-contenu .articles {
+padding: 0px 0;
+}
+
+.col_2-3 {
+margin-top: 0;
+}
+
+#box-edito{
+    border-bottom:1px solid #d9d9d9;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+
+
+#box-edito .box-texte{
+padding:0;
+margin:0;
+font-family: "caslonReg",Arial;
+font-size: 0.98rem;
+line-height: 1.32;
+background:#fff;
+}
+
+#box-edito .bt-ensavoirplus:link, #box-edito .bt-ensavoirplus:visited, #box-edito .bt-ensavoirplus:hover{
+    padding: 4px 9px;
+    background:#d9d9d9;
+    text-align:center;
+    font-family: "caslonReg",Arial;
+    font-size:0.8rem;
+    color:#000;
+    display:flex;
+    align-self: flex-end;
+}
+    #box-edito .bt-ensavoirplus:hover{
+    background:#177CB0;
+    color:#fff;
+    }
+    
+    
+/* -- */
+#box-emplois-stages{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top:18px;
+}
+
+#box-emplois, #box-stages{
+    display:inherit;
+    width:100%;
+    height:180px;
+    background:url("../images/recrut_entree_offres_bloc_bg.png");
+    border: 1px solid #003f65;
+}
+
+#box-emplois-stages .container hr{
+height: 2px;
+width: 40px;
+padding: 0;
+background-color: #fff;
+border: 0;
+margin-bottom: 15px;
+}
+
+
+#box-emplois .container, #box-stages .container{
+width: 100%;
+display: flex;
+align-items: center;
+justify-content: center;
+flex-direction: column;
+    
+}
+#box-emplois  .container > a, #box-stages .container  > a{
+    width:100px;
+    height:100px;
+    background:#fff;
+    border-radius:50%;
+    text-align: center;
+    width: 100px;
+    height: 100px;
+    background: #fff;
+    border-radius: 50%;
+    display: flex;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
+}
+    #box-emplois .container > a:hover, #box-stages .container  > a:hover {
+    background-color: rgba(105, 223, 250, 1);
+    }
+
+#box-emplois p a, #box-stages p a{
+display:flex;
+   align-items: center;
+    justify-content: center;
+text-align:center;   
+font-size:1.25rem;
+font-family:"ag_condensed";
+color:#fff;
+text-decoration:none;
+}
+
+#box-emplois{}
+
+#box-stages{}
+
+
+
+/* -- */
+#chiffres-cles{
+    position:relative;
+    width:100%;
+    margin-top:18px;
+}
+
+#chiffres-cles img{
+    width:100%;
+}
+
+#chiffres-cles .titraille{
+position: absolute;
+display: flex;
+width: 100%;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+margin:0;
+padding: 6.8% 0;
+}
+
+#chiffres-cles h2, #chiffres-cles h3{
+text-transform:initial;
+text-align:center;   
+font-size:3rem;
+font-family:"ag_condensed";
+color:#fff;
+letter-spacing: -0.5px;
+margin:0;
+}
+#chiffres-cles h3{
+    font-size:1.95rem;
+    color:#000;
+    margin:0;
+}
+
+
+/* -- salons */
+#box-salon-video{
+    margin-top:18px;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#box-salon-video  hr{
+height: 1px;
+width: 100%;max-width: initial;
+padding: 0;
+background-color: #ccc;
+border: 0;
+}
+
+#box-salon, #box-video{
+    width:392px;
+    
+}
+
+
+#box-salon h3{
+    color:#186eb1;
+    text-align:center;
+    font-size:1.25rem;
+font-family:"ag_bold_condensed";
+    margin-bottom:18px;
+}
+
+#box-salon h3+hr{
+    background-color: #176db0;
+    width: 40px;
+}
+
+#box-salon h4{
+    color:#003f65;
+    text-align:left;
+    font-size:1.25rem;
+font-family:"ag_condensed";
+    margin:0;
+}
+
+#box-video h3{
+    color:#000;
+    text-align:left;
+    font-family:"ag_condensed";
+    font-size:1.25rem;
+    text-transform: initial;
+}
+#box-video h3{
+margin-top: 15px;
+margin-bottom: 4px;
+}
+#box-video p{
+    margin: 0 0 18px 0;
+}
+
+.box-texte {
+margin-top:18px;
+background:#f2f2f2;
+padding:28px;
+}
+
+
+.bt-ensavoirplus:link, .bt-ensavoirplus:visited,.bt-ensavoirplus:hover{
+    padding: 4px 18px;
+    background:#176db0;
+    text-align:center;
+        font-family:"ag_condensed_italic";
+    font-size:1.125rem;
+    color:#fff;
+}
+    .bt-ensavoirplus:hover{
+    background:#177CB0;
+    color:#fff;
+    }
+    
+    
+/* == col. droite 1.3 */
+.col_1-3{
+    margin: 0px 0 0 54px;
+}
+.col_1-3 h1{
+    font-size: 1.25rem;
+}
+
+#box-contenu .col_1-3 hr{
+height: 1px;
+width: 100%;max-width: initial;
+padding: 0;
+background-color: #ccc;
+border: 0;
+margin:18px 0;
+}
+
+#box-contenu  .articles  .col_1-3 .titraille hr{
+    background-color: #176db0;
+    width: 40px;
+    height: 1px;
+}
+
+.nav-laterale li a:before {
+content: url("../images/recrut_emploi_visuel_mini.png");
+font-size: 1.8rem;
+font-family: "ag_light_condensed";
+margin: 0 17px 0 0;
+}
+
+#cartes-recrut{
+    margin-top:9px;
+}
+
+#cartes-recrut img{
+    width:100%;
+    display:block;
+}
+#cartes-recrut a:link, #cartes-recrut a:visited,  #cartes-recrut a:hover{
+    padding: 18px 0px;
+    display:block;
+    background:#702c6a;
+    text-align:center;
+    font-family:"ag_bold_condensed";
+    font-size:1.125rem;
+    color:#fff;
+    text-transform:uppercase;
+    
+}
+    #cartes-recrut a:hover{
+    background:#177CB0;
+    color:#fff;
+    }
+
+/*== divers */
+.box-post-contenu a[href^="http"]::after {
+content: " "
+}

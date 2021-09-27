@@ -1,0 +1,50 @@
+	#box-nav {
+	background:#002a44;
+	height:18px;
+	}
+
+	#box-contenu .articles {
+	padding: 0;
+	}
+
+	#box-fil-ariane {
+	margin: 0;
+	padding: 8px 0 0;
+	}
+
+	h1,  h2{
+	font-family: "ag_bold_condensed";
+	font-size: 1.56rem;
+	line-height: 0.8;
+	text-transform: uppercase;
+	margin:0;
+	margin: 15px 0;
+	text-align:center;
+	letter-spacing:1.5px;
+	}
+
+	h2{
+	font-size: 1.5rem;
+	text-transform: none;
+	line-height: 1.2;
+	}
+
+
+    /*== recrutement */
+    .recrutement{
+    margin-top:18px;
+    }
+    
+    /* fiche de poste */
+    .box-fdp-descriptif{
+    line-height:normal;
+    }
+    
+    .fdp-contenu li:nth-child(odd), .fdp-contenu li:nth-child(even) {
+     background-color: transparent !important /*hum*/;
+    }
+    
+    .box-fdp-descriptif a:link, .box-fdp-descriptif a:hover, .box-fdp-descriptif a:visited{
+        border-bottom:1px dotted;
+        border-bottom-color:currentColor;
+    }

@@ -1,0 +1,192 @@
+	#box-nav{
+	background:#002a44;
+	height:18px;
+	}
+
+	/**
+	  * choix univers
+	 */
+	#box-choix{
+	text-align:center;
+	background:#eee;
+	padding: 0;
+	}
+	#box-choix .contenu{
+    display: flex;
+    max-width: 1100px;		
+	}
+	
+	#box-choix h2{
+	font-size:1.25rem;
+	width:35%;
+	margin:0 auto;
+	}
+	/* test 
+	#box-choix h2 + hr{
+	width:30%;
+	background-color: green;
+	}
+	*/
+	#box-choix p{
+	max-width:162px;
+	margin:0 auto;
+	font-size:0.88rem;
+	}	
+	
+		/* agence */
+		#box-choix-agence{
+		width:370px;
+		/*border:1px solid green;*/
+		display:block;
+		float:left;
+		margin:30px 0 0 0;
+		}
+
+	
+		/* les publics */
+		#box-choix-public-tous{
+		display:block;
+		max-width:100%;
+		padding:1px 0 0 0;
+		float:right;
+		margin:30px 0 ;
+		}
+
+		.box-choix-public{
+		width:232px;
+		display:inline-block;
+		vertical-align:top;
+		margin: 15px 0 0;
+		}
+
+		.box-choix-public a {
+			display: block;
+			margin: 0 auto;
+			max-width: 147px;
+		}	
+		.box-choix-public h3{
+			font-size:1.13rem;
+			margin: 20px 0 0 0;
+		}	
+		
+		.box-choix-public hr{
+		margin:8px auto; height:1px;
+		}
+		
+		
+		/* administration */	
+		.chx-administration h3{
+		color:#702c6a;
+		}
+		.chx-administration hr{
+		background-color: #702C6A;
+		}	
+		.chx-administrationICO{
+		background-color:#702c6a;
+		}
+		/*** */		
+		
+		/* entreprise */
+		.chx-entreprise h3{
+		color:#FF5C5E;
+		}
+		.chx-entreprise hr{
+		background-color: #FF5C5E;
+		}	
+		.chx-entrepriseICO{
+		background-color:#FF5C5E;
+		}
+		/*** */		
+		
+		/* particulier */
+		.chx-particulier h3{
+		color:#55bab7;
+		}
+		.chx-particulier hr{
+		background-color: #55bab7;
+		}	
+		.chx-particulierICO{
+		background-color:#55bab7;
+		}
+		/*** */
+		
+	
+	
+	/**
+	  * recrutement
+	 */
+	#box-recrutement{
+	background:#dcdcdc;
+	border-bottom:1px solid #b6b6b6;
+	border-top:1px solid #b6b6b6;
+	}
+	
+	#box-recrutement .contenu{
+	margin: 0 auto;
+	max-width: 63%;
+	text-align: center;
+	padding: 15px 0 10px;
+	}
+	
+	.box-emploi-nb{
+	width: 131px;
+	display:table-cell;
+	height:207px;
+	vertical-align:middle;
+	}
+	.box-compteur {
+	width: 15%;
+	display:inline-block;
+	vertical-align:middle;
+	}
+	
+	#box-recrutement-text{
+	width: 50%;
+	display:inline-block;
+	text-align: center;
+	margin:0;
+	vertical-align:middle;
+	}
+	
+	#box-recrutement span{
+	font-family: "ag_light_condensed_italic";
+	color:  #404040;
+	font-size: 1.25rem; 
+	font-weight: 300;
+	width: 379px;
+	height: 20px;
+	}
+	#box-recrutement h2{
+	color:  #002a44;
+	line-height: 0.5;
+	text-transform:uppercase;
+	font: 2.5rem "ag_bold_condensed";
+	margin:10px 0;
+	}
+
+	.box-compteur  h3{
+    background: none repeat scroll 0 0 #fff;
+    border-radius: 50%;
+    color: #d51132;
+    font-family: "ag_bold_condensed";
+    font-size: 3.75rem;
+    height: 5rem;
+    line-height: 1.333;
+    margin: 0 auto;
+    padding: 0;
+    text-align: center;
+    vertical-align: middle;
+    width: 5rem;
+	}
+	
+	.box-compteur  h4{
+	font:0.88rem "caslonReg";
+	color:  #404040;
+	line-height: 1.429;
+	margin: 15px 0 0;
+	text-align: center;
+	}
+	#box-recrutement hr{
+	margin:0 auto;
+	background-color:#003D54;
+	}

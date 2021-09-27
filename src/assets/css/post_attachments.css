@@ -1,0 +1,236 @@
+ a.post-attachment:link,  a.post-attachment:hover,  a.post-attachment:visited {
+position: relative;
+display: inline-block;
+padding: 0 0 0 42px;
+background: #eee;
+width: 85%;
+
+}
+
+a.post-attachment:link{
+    border-bottom:none !important;
+}
+a.post-attachment:hover {
+text-decoration:none;
+border-bottom:1px dotted;
+}
+
+a.post-attachment:before {
+width: 35px;
+height: 40px;
+content: "-";
+color: #FFF;
+font-family: "ag_condensed";
+font-size:0.88rem;
+display: inline-block;
+margin: 0px 10px 0 -42px;
+vertical-align: middle;
+text-align: center;
+padding: 10px 0 0px 0px;
+line-height: 4;
+}
+
+
+
+
+a.post-attachment-application-pdf:before {
+background: url("../images/icon_dl_mini.png") no-repeat center 3px, 
+    -webkit-linear-gradient(bottom , #ee2b31, #ee2b31 48%, #dcdcdc 30%, #dcdcdc) repeat scroll 0% 0% transparent;
+background: url("../images/icon_dl_mini.png") no-repeat center 3px,
+    -moz-linear-gradient(bottom , #ee2b31, #ee2b31 48%, #dcdcdc 30%, #dcdcdc) repeat scroll 0% 0% transparent;
+background: url("../images/icon_dl_mini.png") no-repeat center 3px,
+    -ms-linear-gradient(bottom , #ee2b31, #ee2b31 48%, #dcdcdc 30%, #dcdcdc) repeat scroll 0% 0% transparent;   
+content: "PDF";
+background: url("../images/icon_dl_mini.png") no-repeat center 3px, 
+    linear-gradient(bottom , #ee2b31, #ee2b31 48%, #dcdcdc 30%, #dcdcdc) repeat scroll 0% 0% transparent;
+}
+
+
+a.post-attachment-application-vnd-ms-powerpoint:before,
+a.post-attachment-application-vnd-openxmlformats-officedocument-presentationml-presentation:before{
+background: url("../images/icon_dl_mini.png") no-repeat center 3px, 
+    -webkit-linear-gradient(bottom , #9d4219, #9d4219 48%, #dcdcdc 30%, #dcdcdc) repeat scroll 0% 0% transparent;
+background: url("../images/icon_dl_mini.png") no-repeat center 3px,
+    -moz-linear-gradient(bottom , #9d4219, #9d4219 48%, #dcdcdc 30%, #dcdcdc) repeat scroll 0% 0% transparent;
+background: url("../images/icon_dl_mini.png") no-repeat center 3px,
+    -ms-linear-gradient(bottom , #9d4219, #9d4219 48%, #dcdcdc 30%, #dcdcdc) repeat scroll 0% 0% transparent;   
+content: "PPT";
+background: url("../images/icon_dl_mini.png") no-repeat center 3px, 
+    linear-gradient(bottom , #9d4219, #9d4219 48%, #dcdcdc 30%, #dcdcdc) repeat scroll 0% 0% transparent;
+}
+    a.post-attachment-application-vnd-openxmlformats-officedocument-presentationml-presentation:before{
+        content: "PPTX";
+    }
+
+
+a.post-attachment-application-msword:before, 
+a.post-attachment-application-rtf:before, 
+a.post-attachment-application-vnd-openxmlformats-officedocument-wordprocessingml-template:before,
+a.post-attachment-application-vnd-openxmlformats-officedocument-wordprocessingml-document:before
+{
+background: url("../images/icon_dl_mini.png") no-repeat center 3px, 
+    -webkit-linear-gradient(bottom , #1041aa, #1041aa 48%, #dcdcdc 30%, #dcdcdc) repeat scroll 0% 0% transparent;
+background: url("../images/icon_dl_mini.png") no-repeat center 3px,
+    -moz-linear-gradient(bottom , #1041aa, #1041aa 48%, #dcdcdc 30%, #dcdcdc) repeat scroll 0% 0% transparent;
+background: url("../images/icon_dl_mini.png") no-repeat center 3px,
+    -ms-linear-gradient(bottom , #1041aa, #1041aa 48%, #dcdcdc 30%, #dcdcdc) repeat scroll 0% 0% transparent;
+background: url("../images/icon_dl_mini.png") no-repeat center 3px,
+    linear-gradient(bottom , #1041aa, #1041aa 48%, #dcdcdc 30%, #dcdcdc) repeat scroll 0% 0% transparent;	
+
+content: "DOC";
+}
+  a.post-attachment-application-rtf:before{
+      content: "RTF";
+  }
+  
+  a.post-attachment-application-vnd-openxmlformats-officedocument-wordprocessingml-template:before{
+      content: "DOTX";
+  }
+  
+    a[href*="_EN.pdf"].post-attachment-application-pdf:after,
+    a[href*="_EN.doc"].post-attachment-application-msword:after, 
+    a[href*="_EN.dot"].post-attachment-application-msword:after, 
+    a[href*="_EN.rtf"].post-attachment-application-rtf:after, 
+    a[href*="_EN.docx"].post-attachment-application-vnd-openxmlformats-officedocument-wordprocessingml-document:after, 
+    a[href*="_EN.dotx"].post-attachment-application-vnd-openxmlformats-officedocument-wordprocessingml-template:after{
+      content: url(../images/flag_en_icon.png);
+      margin: 0px 0 0 9px;
+    }
+    a[href*="-EN.pdf"].post-attachment-application-pdf:after,
+    a[href*="-EN.doc"].post-attachment-application-msword:after, 
+    a[href*="-EN.rtf"].post-attachment-application-rtf:after, 
+    a[href*="-EN.docx"].post-attachment-application-vnd-openxmlformats-officedocument-wordprocessingml-document:after, 
+    a[href*="-EN.dotx"].post-attachment-application-vnd-openxmlformats-officedocument-wordprocessingml-template:after{
+      content: url(../images/flag_en_icon.png);
+      margin: 0px 0 0 9px;
+    }
+
+    a[href*="_en.pdf"].post-attachment-application-pdf:after,
+    a[href*="_en.doc"].post-attachment-application-msword:after, 
+    a[href*="_en.dot"].post-attachment-application-msword:after, 
+    a[href*="_en.rtf"].post-attachment-application-rtf:after, 
+    a[href*="_en.docx"].post-attachment-application-vnd-openxmlformats-officedocument-wordprocessingml-document:after,  
+    a[href*="_en.dotx"].post-attachment-application-vnd-openxmlformats-officedocument-wordprocessingml-template:after{
+      content: url(../images/flag_en_icon.png);
+      margin: 0px 0 0 9px;
+    }
+    a[href*="-en.pdf"].post-attachment-application-pdf:after,
+    a[href*="-en.doc"].post-attachment-application-msword:after, 
+    a[href*="-en.rtf"].post-attachment-application-rtf:after, 
+    a[href*="-en.docx"].post-attachment-application-vnd-openxmlformats-officedocument-wordprocessingml-document:after, 
+    a[href*="-en.dotx"].post-attachment-application-vnd-openxmlformats-officedocument-wordprocessingml-template:after{
+      content: url(../images/flag_en_icon.png);
+      margin: 0px 0 0 9px;
+    }
+
+a.post-attachment-application-vnd.ms-excel:before, 
+a.post-attachment-application-vnd.openxmlformats-officedocument.spreadsheetml.sheet:before,
+a.post-attachment-application-vnd-openxmlformats-officedocument-spreadsheetml-sheet:before{
+background: url("../images/icon_dl_mini.png") no-repeat center 3px, 
+    -webkit-linear-gradient(bottom , #50a03c, #50a03c 48%, #dcdcdc 30%, #dcdcdc) repeat scroll 0% 0% transparent;
+background: url("../images/icon_dl_mini.png") no-repeat center 3px,
+    -moz-linear-gradient(bottom , #50a03c, #50a03c 48%, #dcdcdc 30%, #dcdcdc) repeat scroll 0% 0% transparent;
+background: url("../images/icon_dl_mini.png") no-repeat center 3px,
+    -ms-linear-gradient(bottom , #50a03c, #50a03c 48%, #dcdcdc 30%, #dcdcdc) repeat scroll 0% 0% transparent;
+background: url("../images/icon_dl_mini.png") no-repeat center 3px,
+    linear-gradient(bottom , #50a03c, #50a03c 48%, #dcdcdc 30%, #dcdcdc) repeat scroll 0% 0% transparent;	
+
+content: "XLS";
+}
+  a.post-attachment-application-vnd.openxmlformats-officedocument.spreadsheetml.sheet:before,
+  a.post-attachment-application-vnd-openxmlformats-officedocument-spreadsheetml-sheet:before{
+      content: "XLSX";
+  }
+  
+
+a.post-attachment-application-x-pkcs7-crl:before, a.post-attachment-application-x-x509-user-cert:before{
+background: url("../images/icon_dl_mini.png") no-repeat center 3px, 
+    -webkit-linear-gradient(bottom , #808080, #808080 48%, #dcdcdc 30%, #dcdcdc) repeat scroll 0% 0% transparent;
+background: url("../images/icon_dl_mini.png") no-repeat center 3px,
+    -moz-linear-gradient(bottom , #808080, #808080 48%, #dcdcdc 30%, #dcdcdc) repeat scroll 0% 0% transparent;
+background: url("../images/icon_dl_mini.png") no-repeat center 3px,
+    -ms-linear-gradient(bottom , #808080, #808080 48%, #dcdcdc 30%, #dcdcdc) repeat scroll 0% 0% transparent;
+background: url("../images/icon_dl_mini.png") no-repeat center 3px,
+    linear-gradient(bottom , #808080, #808080 48%, #dcdcdc 30%, #dcdcdc) repeat scroll 0% 0% transparent;	
+content: "CRL";
+}
+    a.post-attachment-application-x-x509-user-cert:before{
+        content: "CRT";
+    }
+
+a.post-attachment-text-html:before{
+background: url("../images/icon_dl_mini.png") no-repeat center 3px, 
+-webkit-linear-gradient(bottom , #808080, #808080 48%, #dcdcdc 30%, #dcdcdc) repeat scroll 0% 0% transparent;
+background: url("../images/icon_dl_mini.png") no-repeat center 3px,
+    -moz-linear-gradient(bottom , #808080, #808080 48%, #dcdcdc 30%, #dcdcdc) repeat scroll 0% 0% transparent;
+background: url("../images/icon_dl_mini.png") no-repeat center 3px,
+    -ms-linear-gradient(bottom , #808080, #808080 48%, #dcdcdc 30%, #dcdcdc) repeat scroll 0% 0% transparent;
+background: url("../images/icon_dl_mini.png") no-repeat center 3px,
+    linear-gradient(bottom , #808080, #808080 48%, #dcdcdc 30%, #dcdcdc) repeat scroll 0% 0% transparent;
+content: "HTML";
+}
+
+a.post-attachment-application-xml:before{
+background: url("../images/icon_dl_mini.png") no-repeat center 3px, 
+-webkit-linear-gradient(bottom , #808080, #808080 48%, #dcdcdc 30%, #dcdcdc) repeat scroll 0% 0% transparent;
+background: url("../images/icon_dl_mini.png") no-repeat center 3px,
+    -moz-linear-gradient(bottom , #808080, #808080 48%, #dcdcdc 30%, #dcdcdc) repeat scroll 0% 0% transparent;
+background: url("../images/icon_dl_mini.png") no-repeat center 3px,
+    -ms-linear-gradient(bottom , #808080, #808080 48%, #dcdcdc 30%, #dcdcdc) repeat scroll 0% 0% transparent;
+background: url("../images/icon_dl_mini.png") no-repeat center 3px,
+    linear-gradient(bottom , #808080, #808080 48%, #dcdcdc 30%, #dcdcdc) repeat scroll 0% 0% transparent;
+content: "XML";
+}
+
+
+a.post-attachment-application-zip:before, a.post-attachment-application-x-gzip:before{
+background: url("../images/icon_dl_mini.png") no-repeat center 3px, 
+-webkit-linear-gradient(bottom , #ffba00, #ffba00 48%, #dcdcdc 30%, #dcdcdc) repeat scroll 0% 0% transparent;
+background: url("../images/icon_dl_mini.png") no-repeat center 3px,
+    -moz-linear-gradient(bottom , #ffba00, #ffba00 48%, #dcdcdc 30%, #dcdcdc) repeat scroll 0% 0% transparent;
+background: url("../images/icon_dl_mini.png") no-repeat center 3px,
+    -ms-linear-gradient(bottom , #ffba00, #ffba00 48%, #dcdcdc 30%, #dcdcdc) repeat scroll 0% 0% transparent;
+background: url("../images/icon_dl_mini.png") no-repeat center 3px,
+    linear-gradient(bottom , #ffba00, #ffba00 48%, #dcdcdc 30%, #dcdcdc) repeat scroll 0% 0% transparent;
+content: "ZIP";
+}
+    a.post-attachment-application-x-gzip:before{
+        content: "GZIP";
+    }
+
+
+a.post-attachment-application-epub-zip:before, a.post-attachment-application-x-mobi8-ebook:before{
+background: url("../images/icon_dl_mini.png") no-repeat center 3px, 
+-webkit-linear-gradient(bottom , #85b916, #85b916 48%, #dcdcdc 30%, #dcdcdc) repeat scroll 0% 0% transparent;
+background: url("../images/icon_dl_mini.png") no-repeat center 3px,
+    -moz-linear-gradient(bottom , #85b916, #85b916 48%, #dcdcdc 30%, #dcdcdc) repeat scroll 0% 0% transparent;
+background: url("../images/icon_dl_mini.png") no-repeat center 3px,
+    -ms-linear-gradient(bottom , #85b916, #85b916 48%, #dcdcdc 30%, #dcdcdc) repeat scroll 0% 0% transparent;
+background: url("../images/icon_dl_mini.png") no-repeat center 3px,
+    linear-gradient(bottom , #85b916, #85b916 48%, #dcdcdc 30%, #dcdcdc) repeat scroll 0% 0% transparent;
+content: "EPUB";
+}
+    a.post-attachment-application-x-mobi8-ebook:before{
+        content: "KINDLE";
+    }
+
+
+a.post-attachment-text-plain:before{
+background: url("../images/icon_dl_mini.png") no-repeat center 3px, 
+-webkit-linear-gradient(bottom , #c81688, #c81688 48%, #dcdcdc 30%, #dcdcdc) repeat scroll 0% 0% transparent;
+background: url("../images/icon_dl_mini.png") no-repeat center 3px,
+    -moz-linear-gradient(bottom , #c81688, #c81688 48%, #dcdcdc 30%, #dcdcdc) repeat scroll 0% 0% transparent;
+background: url("../images/icon_dl_mini.png") no-repeat center 3px,
+    -ms-linear-gradient(bottom , #c81688, #c81688 48%, #dcdcdc 30%, #dcdcdc) repeat scroll 0% 0% transparent;
+background: url("../images/icon_dl_mini.png") no-repeat center 3px,
+    linear-gradient(bottom , #c81688, #c81688 48%, #dcdcdc 30%, #dcdcdc) repeat scroll 0% 0% transparent;
+content: "SHA2";
+}
+
+
+a.post-attachment-application-x-gzip {
+	background: url('../images/fileicons/gz.png') no-repeat left center;
+}
+a.post-attachment-text-plain {
+	background: url('../images/fileicons/txt.png') no-repeat left center;
+}

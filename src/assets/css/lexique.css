@@ -1,0 +1,74 @@
+/*
+20150108
+ref. lexique.html
+lexique/glossaire
+**/
+
+	.lexique{}
+	
+	.abecedaire{
+	padding:0;
+	margin:0 auto;
+	width:78%;
+	line-height: 2;
+	}
+	
+	.abecedaire li{
+	border-right: 2px solid #FFF;
+	border-bottom: 2px solid #FFF;
+	display: inline-block;
+	}
+	
+	.abecedaire li a:link, .abecedaire li a:hover, .abecedaire li a:visited{
+	font-family: ag_condensed;
+	font-size: 1.5rem;
+	color: #404040;
+	text-transform: uppercase;
+	text-align: center;
+	background:  #EEE;
+	height: 45px;
+	display: inline-block;
+	width: 45px;
+	text-decoration:none;
+	} 
+		.abecedaire li a:hover, .abecedaire li a:target, .abecedaire li a.selected {
+		background:  #404040;
+		color: #fff;
+		} 
+	
+	/* Liste des termes */
+	.liste-termes{
+	padding:0;
+	margin:27px 0 0 0;
+	border-collapse: collapse;
+	}
+	
+	.liste-termes tr{
+	background: #EEE;
+	margin:0 0 9px 0;
+	}
+	
+	.liste-termes td:first-child{
+	font-family: ag_condensed;
+	font-size: 1.25rem;
+	width:25%;
+	vertical-align:top;
+	padding:18px 36px;
+	border-bottom: 1px solid #dcdcdc;
+	border-right: 1px dotted #FFF;
+	}
+
+	.liste-termes td:nth-child(2){
+	width:74%;
+	padding:18px 36px;
+	vertical-align:top;
+	text-align: justify;
+	text-justify: inter-word;	
+	border-bottom: 1px solid #dcdcdc;
+	}
+	
+	.liste-termes .shim td{
+	background:#fff;
+	border:none;
+	}
+
