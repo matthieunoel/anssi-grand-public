@@ -13,6 +13,9 @@ export class HomeComponent implements OnInit {
   constructor(private data: DataService) { }
 
   ngOnInit(): void {
+
+    sessionStorage.removeItem('pcList');
+
     this.pcList = this.data.getPcList();
     window.setInterval(() => {
       this.pcList = this.data.getPcList();

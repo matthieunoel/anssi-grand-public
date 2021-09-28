@@ -9,12 +9,14 @@ import { MatChipsModule } from '@angular/material/chips';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatSelectModule} from '@angular/material/select';
 import { DataService } from './data.service';
+import { AddpcComponent } from './addpc/addpc.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    HomeComponent
+    HomeComponent,
+    AddpcComponent
   ],
   imports: [
     BrowserModule,

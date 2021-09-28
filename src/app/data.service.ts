@@ -1,5 +1,4 @@
 import { Injectable } from '@angular/core';
-import { Observable } from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
@@ -21,18 +20,50 @@ export class DataService {
     //    });
     //  }, 3000);
 
+    // const db = new Database("../db.sqlite3")
+    // let request: string = ''
+    // request = 'CREATE TABLE IF NOT EXISTS pc(id INTEGER PRIMARY KEY AUTOINCREMENT, nom TEXT, ip NUMERIC);'
+    // db.prepare(request).run()
+
+    // const pcList = localStorage.getItem('pcList');
+
+    // if (!pcList) {
+    //   localStorage.setItem('pcList', '');
+    // }
+
   }
 
   clearPcList() {
-    this.pcList = [];
+    localStorage.removeItem('pcList');
   }
 
   getPcList(): Pc[] {
-    return this.pcList;
+    // return this.pcList;
+    const pcList = localStorage.getItem('pcList');
+    if (pcList != null || pcList == '') {
+      return JSON.parse(pcList);
+    }
+    else {
+      return [];
+    }
   }
 
   addPcToList(pc: Pc) {
-    this.pcList.push(pc);
+    // this.pcList.push(pc);
+
+    const pcList = localStorage.getItem('pcList');
+    let pcList2 = [];
+    if (pcList != null) {
+      if (pcList != '') {
+        console.log('pcList :', pcList)
+        pcList2 = JSON.parse(pcList);
+      }
+    }
+
+    pcList2.push(pc);
+
+    localStorage.setItem('pcList', JSON.stringify(pcList2));
+
   }
 
   // getObservable(): Observable<Pc[]> {
