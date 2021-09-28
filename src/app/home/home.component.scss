@@ -1,0 +1,38 @@
+.mat-h1,
+.mat-headline,
+.mat-typography h1 {
+    font: normal !important;
+}
+
+#downloadTable {
+    font-family: SourceSansProBold, Arial, sans-serif;
+}
+
+#downloadTable li {
+    list-style-type: none;
+    width: 100%;
+    // background-color: tomato;
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#downloadTable span {
+    // background-color: violet;
+    width: 23%;
+}
+
+#downloadTable a {
+    color: #2b5b84;
+}
+
+#downloadTable img {
+    height: 15px;
+    width: auto;
+    margin-left: 5px;
+    // color: #2b5b84;
+    // filter: invert(42%) sepia(93%) saturate(1352%) hue-rotate(87deg) brightness(119%) contrast(119%);
+    // filter: invert(50%) sepia(93%);
+    fill: violet;
+}

@@ -8,6 +8,21 @@ import {MatChipsModule} from '@angular/material/chips';
 })
 export class HomeComponent implements OnInit {
 
+  public osList = [
+    {
+      value: "A",
+      viewValue: "A"
+    },
+    {
+      value: "B",
+      viewValue: "B"
+    },
+    {
+      value: "C",
+      viewValue: "C"
+    }
+  ]
+
   constructor() { }
 
   ngOnInit(): void {
