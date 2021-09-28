@@ -8,6 +8,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatChipsModule } from '@angular/material/chips';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatSelectModule} from '@angular/material/select';
+import { DataService } from './data.service';
 
 
 @NgModule({
@@ -23,7 +24,7 @@ import {MatSelectModule} from '@angular/material/select';
     MatFormFieldModule,
     MatSelectModule
   ],
-  providers: [],
+  providers: [DataService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

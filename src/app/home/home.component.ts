@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import {MatChipsModule} from '@angular/material/chips';
+import { DataService, Pc } from '../data.service';
 
 @Component({
   selector: 'app-home',
@@ -8,18 +8,15 @@ import {MatChipsModule} from '@angular/material/chips';
 })
 export class HomeComponent implements OnInit {
 
-  public pcList = [
-    {
-      Nom: "DESKTOP-MN23S2D",
-      Ip: "127.0.0.1",
-      Statut: "En ligne et à jour."
-    }
-  ]
+  public pcList: Pc[] = [];
 
-  constructor() { }
+  constructor(private data: DataService) { }
 
   ngOnInit(): void {
-    console.log('Init HomeComponent')
+    this.pcList = this.data.getPcList();
+    window.setInterval(() => {
+      this.pcList = this.data.getPcList();
+    }, 500);
   }
 
 }
