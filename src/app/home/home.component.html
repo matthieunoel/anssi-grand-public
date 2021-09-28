@@ -140,6 +140,17 @@
             <!-- <header style="background-color: lightpink; text-align: end;">
                 Connécté en tant que matthieu.noel
             </header> -->
+
+            <ul id="box-fil-ariane">
+                <li>
+                    <!-- <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">En cas d’incident</a> -->
+                </li>
+            </ul>
+            <div class="titraille">
+                <h2>Gestion en ligne</h2>
+                <hr>
+            </div>
+
             <div class="col_2-3" style="width: 90%; display: block; margin: 46px auto 0px; ">
                 <div id="commandBloc">
                     <header>
@@ -147,7 +158,7 @@
                         <span>Connecté en tant que <i>matthieu.noel</i></span>
                     </header>
                     <article>
-                        <section class="card">
+                        <section class="card" *ngFor="let pc of pcList">
                             <!-- <div class="imageDiv">
                                 <img src="/assets/images/computer.svg" alt="serveur">
                             </div> -->
@@ -156,31 +167,23 @@
                             </div>
                             <ol>
                                 <li>
-                                    Nom : <i>DESKTOP-MN23S2D</i>
+                                    Nom : <i>{{pc.Nom}}</i>
                                 </li>
                                 <li>
-                                    Ip : <i>127.0.0.1</i>
+                                    Ip : <i>{{pc.Ip}}</i>
                                 </li>
                                 <li>
-                                    Statut : <i>En ligne et à jour.</i>
+                                    Statut : <i>{{pc.Statut}}</i>
                                 </li>
                             </ol>
                             <div class="zeroDiv">
                                 <img src="/assets/images/computer.svg" alt="serveur">
                             </div>
                         </section>
-                        <section class="card">
+                        <!-- <section class="card">
                             <div class="imageDiv">
                             </div>
-                        </section>
-                        <section class="card">
-                            <div class="imageDiv">
-                            </div>
-                        </section>
-                        <section class="card">
-                            <div class="imageDiv">
-                            </div>
-                        </section>
+                        </section> -->
                     </article>
                 </div>
             </div>

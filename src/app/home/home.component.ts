@@ -8,18 +8,11 @@ import {MatChipsModule} from '@angular/material/chips';
 })
 export class HomeComponent implements OnInit {
 
-  public osList = [
+  public pcList = [
     {
-      value: "A",
-      viewValue: "A"
-    },
-    {
-      value: "B",
-      viewValue: "B"
-    },
-    {
-      value: "C",
-      viewValue: "C"
+      Nom: "DESKTOP-MN23S2D",
+      Ip: "127.0.0.1",
+      Statut: "En ligne et à jour."
     }
   ]
 
