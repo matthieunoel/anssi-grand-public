@@ -63,46 +63,97 @@
             </div>
 
             <div class="col_2-3" style="width: 90%; display: block; margin: 46px auto 0px;">
-                <h2>Choisissez votre système d'exploitation</h2>
+                <div class="rightLeftShit">
+                    <h2>
+                        <a href="/?show=true" style="position: relative; top: 5px; right: 5px; cursor: pointer;"><img src="/assets/images/arrow.svg" style="height: 25px; width: auto;"></a> Détails de la machine <i>DESKTOP-MN23S2D</i> (<i>127.0.0.1</i>)
+                    </h2>
+                    <div id="RightThing">
+                        <span style="display: inline-flex;">
+                          <div style="height: 12px; width: 12px; background-color: greenyellow; border-radius: 50%; position: relative; right: 5px; top: 4px;"></div>
+                          En ligne, à jour.
+                        </span>
+                        <span>Dernier scan : <i>{{scanTime}}</i></span>
+                    </div>
+                </div>
 
-                <ol id="downloadTable" style="padding-bottom: 15px;">
+                <section style="margin : 0 0 15px 40px">
+                    <span style="font-weight: bold;">Système d'exploitation : <i style="font-weight: normal;">Windows 10 Famille version 20H2 (19042.1237)</i></span>
+                </section>
+
+                <br>
+                <h3 style="margin : 0 0 15px 40px">Services pris en charge</h3>
+                <ol id="styledTable" style="padding-bottom: 15px;">
                     <li style="background-color: lightgrey; margin-bottom: 5px; font-weight: bold;">
-                        <span>OS</span>
+                        <span>Nom</span>
                         <span>Version</span>
-                        <span>Lien</span>
-                        <span>Notes de version</span>
+                        <span>Statut</span>
+                        <span>En savoir plus</span>
                     </li>
                     <li style="background-color: #f2f4f6;">
-                        <span>Windows</span>
-                        <span>1.0.7</span>
+                        <span>Apache</span>
+                        <span>2.4.49</span>
+                        <span>A jour.</span>
                         <span>
-                          <a href="#">Télécharger</a>
-                        </span>
-                        <span>
-                          <a href="#">En savoir plus ...</a>
+                          <a href="https://www.apache.org/" target="_blank">Documentatione en ligne</a>
                         </span>
                     </li>
                     <li>
-                        <span>Linux</span>
-                        <span>1.0.6</span>
+                        <span>Ftp</span>
+                        <span>1.12.2</span>
+                        <span>A jour.</span>
                         <span>
-                          <a href="#">Télécharger</a>
+                          <a href="https://filezilla-project.org/" target="_blank">Documentatione en ligne</a>
+                      </span>
+                    </li>
+                    <li style="background-color: #f2f4f6;">
+                        <span>Open-ssh</span>
+                        <span>1.7.3</span>
+                        <span>A jour.</span>
+                        <span>
+                          <a href="https://www.openssh.com/" target="_blank">Documentatione en ligne</a>
+                      </span>
+                    </li>
+                </ol>
+
+                <br>
+                <h3 style="margin : 0 0 15px 40px">Dernière failles corrigées</h3>
+                <ol id="styledTable" style="padding-bottom: 15px;">
+                    <li style="background-color: lightgrey; margin-bottom: 5px; font-weight: bold;">
+                        <span>Element</span>
+                        <span>Code</span>
+                        <span>Danger</span>
+                        <span>En savoir plus</span>
+                    </li>
+                    <li style="background-color: #f2f4f6;">
+                        <span>Service (Apache)</span>
+                        <span>0x54555420545554</span>
+                        <span>Critique</span>
+                        <span>
+                          <a href="#">Informations ...</a>
                         </span>
+                    </li>
+                    <li>
+                        <span>Port ouverts (pare-feu)</span>
+                        <span>0x46494c53204445</span>
+                        <span>Critique</span>
                         <span>
-                          <a href="#">En savoir plus ...</a>
+                          <a href="#">Informations ...</a>
                         </span>
                     </li>
                     <li style="background-color: #f2f4f6;">
-                        <span>Mac OS</span>
-                        <span>1.0.2</span>
+                        <span>Pilotes non à jours</span>
+                        <span>0x54555420545554</span>
+                        <span>Warning</span>
                         <span>
-                          <a href="#">Télécharger</a>
-                        </span>
-                        <span>
-                          <a href="#">En savoir plus ...</a>
+                          <a href="#">Informations ...</a>
                         </span>
                     </li>
                 </ol>
+
+                <section id="pdfDownloadZone">
+                    <!-- <input type="button" value="Télé charger le rapport d'analyse et les conseils de maintenance autogénérés"> -->
+                    <a href="/assets/download/DESKTOP-MN23S2D-2021_09-m03.pdf" target="_blank">Télécharger le rapport d'analyse et les conseils de maintenance autogénérés</a>
+                </section>
 
             </div>
         </div>

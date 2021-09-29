@@ -1,8 +1,8 @@
-#downloadTable {
+#styledTable {
     font-family: SourceSansProBold, Arial, sans-serif;
 }
 
-#downloadTable li {
+#styledTable li {
     list-style-type: none;
     width: 100%;
     // background-color: tomato;
@@ -12,16 +12,85 @@
     align-items: center;
 }
 
-#downloadTable span {
+#styledTable span {
     width: 23%;
 }
 
-#downloadTable a {
+#styledTable a {
     color: #2b5b84;
 }
 
-#downloadTable img {
+#styledTable img {
     height: 15px;
     width: auto;
     margin-left: 5px;
+}
+
+.rightLeftShit {
+    display: flex;
+    flex-flow: row;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.rightLeftShit h2 {
+    margin: 0;
+}
+
+#RightThing {
+    display: flex;
+    flex-flow: column;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+
+#pdfDownloadZone {
+    width: 100%;
+    min-height: 30px;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#pdfDownloadZone a {
+    border: 1px grey solid;
+    font-size: larger;
+    background-color: #d5dee7;
+    margin-top: 33px;
+    margin-left: 15px;
+    z-index: 4;
+    min-width: 100px;
+    // min-height: 35px;
+    cursor: pointer;
+    font-family: "ag_condensed";
+    transition: 0.5s;
+    position: relative;
+    bottom: 25px;
+    padding: 10px 5px;
+}
+
+#pdfDownloadZone a:hover {
+    background-color: #b8d0e7;
+    transition: 0.5s;
+}
+
+.card input {
+    border: 1px grey solid;
+    font-size: larger;
+    background-color: #d5dee7;
+    // position: relative;
+    margin-top: 33px;
+    margin-left: 15px;
+    z-index: 4;
+    width: 100px;
+    height: 35px;
+    cursor: pointer;
+    font-family: "ag_condensed";
+    transition: 0.5s;
+}
+
+.card input:hover {
+    background-color: #b8d0e7;
+    transition: 0.5s;
 }
