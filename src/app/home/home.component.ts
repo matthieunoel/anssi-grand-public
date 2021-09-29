@@ -17,9 +17,14 @@ export class HomeComponent implements OnInit {
     sessionStorage.removeItem('pcList');
 
     this.pcList = this.data.getPcList();
-    window.setInterval(() => {
-      this.pcList = this.data.getPcList();
-    }, 500);
+    setTimeout(() => {
+      this.pcList = this.data.getPcListStatic();
+    // }, 20000);
+    }, 1);
+  }
+
+  pcClick() {
+    window.location.href = '/viewpc';
   }
 
 }

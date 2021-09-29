@@ -1,27 +1,3 @@
-<!-- <header>
-    <h1>Titre</h1>
-</header>
-
-<article>
-    <section>Oui</section>
-    <section>Non</section>
-    <section>
-        <mat-chip-list>
-            <mat-chip>Papadum</mat-chip>
-            <mat-chip>Naan</mat-chip>
-            <mat-chip>Dal</mat-chip>
-        </mat-chip-list>
-    </section>
-</article>
-
-<article>
-    <input type="button" value="Générer">
-</article> -->
-
-<!-- <footer>
-    <h3>Footer</h3>
-</footer> -->
-
 <link rel="stylesheet" href="/assets/css/webfonts.css" media="all">
 <link rel="stylesheet" href="/assets/css/global.css" media="all">
 <link rel="stylesheet" href="/assets/css/post_attachments.css" media="all">
@@ -78,11 +54,9 @@
         <div class="contenu articles">
             <ul id="box-fil-ariane">
                 <li>
-                    <!-- <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">En cas d’incident</a> -->
                 </li>
             </ul>
             <div class="titraille">
-                <!-- <h1>Service d'Aide à l'Installation des Systèmes d'Informations.</h1> -->
                 <h1>ANSSIBOT</h1>
                 <h2>Certification ANSSI Secure Niveau 2 en temps réel</h2>
                 <hr>
@@ -103,7 +77,6 @@
                         <span>1.0.7</span>
                         <span>
                           <a href="#">Télécharger</a>
-                          <img src="/assets/images/download-to-storage-drive.svg">
                         </span>
                         <span>
                           <a href="#">En savoir plus ...</a>
@@ -114,7 +87,6 @@
                         <span>1.0.6</span>
                         <span>
                           <a href="#">Télécharger</a>
-                          <img src="/assets/images/download-to-storage-drive.svg">
                         </span>
                         <span>
                           <a href="#">En savoir plus ...</a>
@@ -125,7 +97,6 @@
                         <span>1.0.2</span>
                         <span>
                           <a href="#">Télécharger</a>
-                          <img src="/assets/images/download-to-storage-drive.svg">
                         </span>
                         <span>
                           <a href="#">En savoir plus ...</a>
@@ -135,64 +106,6 @@
 
             </div>
         </div>
-
-        <div class="contenu articles" style="display: flex; flex-flow: column; justify-content: center; align-items: center; padding-bottom: 1em;">
-            <!-- <header style="background-color: lightpink; text-align: end;">
-                Connécté en tant que matthieu.noel
-            </header> -->
-
-            <ul id="box-fil-ariane">
-                <li>
-                    <!-- <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">En cas d’incident</a> -->
-                </li>
-            </ul>
-            <div class="titraille">
-                <h2>Gestion en ligne</h2>
-                <hr>
-            </div>
-
-            <div class="col_2-3" style="width: 90%; display: block; margin: 46px auto 0px; ">
-                <div id="commandBloc">
-                    <header>
-                        <h3>Vos machines</h3>
-                        <span>Connecté en tant que <i>matthieu.noel</i></span>
-                    </header>
-                    <article>
-                        <section class="card" *ngFor="let pc of pcList">
-                            <!-- <div class="imageDiv">
-                                <img src="/assets/images/computer.svg" alt="serveur">
-                            </div> -->
-                            <div class="zeroDiv">
-                                <div class="round"></div>
-                            </div>
-                            <ol>
-                                <li>
-                                    Nom : <i>{{pc.Nom}}</i>
-                                </li>
-                                <li>
-                                    Ip : <i>{{pc.Ip}}</i>
-                                </li>
-                                <li>
-                                    Statut : <i>{{pc.Statut}}</i>
-                                </li>
-                            </ol>
-                            <input type="button" value="Détails" (click)="pcClick()">
-                            <div class="zeroDiv">
-                                <img src="/assets/images/computer.svg" alt="serveur">
-                            </div>
-                        </section>
-                        <!-- <section class="card">
-                            <div class="imageDiv">
-                            </div>
-                        </section> -->
-                    </article>
-                </div>
-            </div>
-        </div>
-
-        <!-- <div id="box-toppage ">
-            <a href="# "><img src="/assets/images/icon_toppage.png "></a>
-        </div> -->
     </div>
     <footer id="box-footer">
         <div class="contenu">
@@ -289,28 +202,6 @@
 
 
     <div id="colorgram-extension-sidebar " class="inst-ext-sidebar ">
-        <!-- <div class="page-inner ">
-            <h1 class="main-title "><span class="text title ">Choisissez un thème</span><span class="text "><a href="# " class="link dark-mode icon-sun feather "><span class="tooltip ">Activer le thème Instagram par défaut</span></a>
-                <a href="# " class="link refresh icon-refresh-ccw feather "><span class="tooltip ">Activer le thème Instagram par défaut</span></a>
-                <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank " class="link instagram icon-instagram feather "><span class="tooltip ">Consultez notre instagram</span></a>
-                <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank " class="link rate icon-star-on feather "><span class="tooltip ">Rate app</span></a>
-                <a href="# " class="link share feather icon-share-2 "><span class="tooltip ">Share app</span></a><a href="# " class="link close feather icon-x-circle "><span class="tooltip ">Fermer la barre latérale</span></a></span>
-            </h1>
-            <div class="themes-list-container ">
-                <div class="rcs-custom-scroll " style="height: 100%; ">
-                    <div class="rcs-outer-container " style="height: 100%; ">
-                        <div class="rcs-inner-container " style="height: 100%; margin-right: -17px; ">
-                            <div style="height: 100%; overflow-y: visible; margin-right: 0px; ">
-                                <ul class="themes-list "></ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="tooltip-container ">
-                <p class="text ">Thème enregistré</p>
-            </div>
-        </div> -->
     </div>
 </div>
 

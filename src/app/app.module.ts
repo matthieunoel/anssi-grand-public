@@ -10,13 +10,15 @@ import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatSelectModule} from '@angular/material/select';
 import { DataService } from './data.service';
 import { AddpcComponent } from './addpc/addpc.component';
+import { ViewpcComponent } from './viewpc/viewpc.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
-    AddpcComponent
+    AddpcComponent,
+    ViewpcComponent
   ],
   imports: [
     BrowserModule,

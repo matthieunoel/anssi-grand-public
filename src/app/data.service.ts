@@ -11,6 +11,12 @@ export class DataService {
 
   constructor() {
 
+    this.pcList.push({
+            Nom: "DESKTOP-MN23S2D",
+            Ip: "127.0.0.1",
+            Statut: "En ligne et à jour."
+         });
+
     // // setInterval(()=>{
     //  setTimeout(()=>{
     //    this.pcList.push({
@@ -46,6 +52,10 @@ export class DataService {
     else {
       return [];
     }
+  }
+
+  getPcListStatic(): Pc[] {
+    return this.pcList;
   }
 
   addPcToList(pc: Pc) {

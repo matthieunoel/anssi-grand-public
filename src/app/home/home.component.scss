@@ -111,8 +111,28 @@
     height: 180px;
     width: auto;
     position: relative;
-    bottom: 55px;
+    bottom: 120px;
     left: 150px;
     opacity: 30%;
     transform: scaleX(-1);
+}
+
+.card input {
+    border: 1px grey solid;
+    font-size: larger;
+    background-color: #d5dee7;
+    // position: relative;
+    margin-top: 33px;
+    margin-left: 15px;
+    z-index: 4;
+    width: 100px;
+    height: 35px;
+    cursor: pointer;
+    font-family: "ag_condensed";
+    transition: 0.5s;
+}
+
+.card input:hover {
+    background-color: #b8d0e7;
+    transition: 0.5s;
 }
