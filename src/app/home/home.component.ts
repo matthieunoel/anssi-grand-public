@@ -26,7 +26,7 @@ export class HomeComponent implements OnInit {
         else {
           setTimeout(() => {
             this.pcList = this.data.getPcListStatic();
-          }, 20000);
+          }, 40000);
           // }, 1);
         }
       });
